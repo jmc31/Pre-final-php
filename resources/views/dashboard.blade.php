@@ -13,7 +13,9 @@
                     <h3 class="text-2xl font-semibold mb-4">{{ __("You're logged in!") }}</h3>
                     
                     <!-- Livewire Counter Component -->
-
+                    <div>
+                        @livewire('students.create')
+                    </div>
                     <!-- Livewire Students Index Component -->
                     <div>
                         @livewire('students.index')

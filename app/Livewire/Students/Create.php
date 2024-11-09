@@ -42,7 +42,7 @@ class Create extends Component
             $this->form->all()
         );
                 
-        flash()->success('Student added successfully');
+        $this->dispatchBrowserEvent('show-toast', ['message' => 'Student added successfully!']);
         
         return $this->redirect(Index::class, navigate: true);
     }
